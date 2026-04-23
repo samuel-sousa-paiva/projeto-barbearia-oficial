@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo */
+body {
+  background: url('img\ fundo\ produto.png') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Container central */
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+H1 {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background-color: #00ffcc;
+  border: none;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #048fb9;
+}
+
+/* Carrinho */
+#lista-carrinho {
+  background: rgb(3, 100, 165);
+  color: black;
+  padding: 10px;
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  min-height: 100px;
+}
+
+/* Total */
+#total {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #00ffcc;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.8;
+}

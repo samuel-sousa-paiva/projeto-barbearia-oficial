@@ -1,49 +1,98 @@
-
-       
-       body {
-    background-image: url("image\ logo.png");
+body {
+    background-image: url("imagem\ de\ fundo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    color: white;
+    color: #ffffff;
+    font-size: 18px;
 }
-       body {
-            background-image: url('Image_fx\ \(3\).png');
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            color: white;
-        }
 
-        h1 {
-            text-align: center;
-            color: rgb(7, 105, 151);
-        }
+/* TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    color: #000000;
+    letter-spacing: 2px;
+    background-color: gold;
+}
 
-        h2 {
-            margin-top: 20px;
-            color: rgb(255, 255, 255);
-        }
+/* SUBTÍTULOS */
+h3 {
+    margin-top: 20px;
+    color: #28151be7;
+    background-color: rgb(90, 79, 18);
+}
 
-        button {
-            padding: 10px 20px;
-            background-color: black;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
+/* BOTÃO */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #000000, #0a0a0a);
+    color: #00bfff;
+    border: 1px solid #00bfff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
 
-        button:hover {
-            background-color: #333;
-        }
+/* HOVER DO BOTÃO */
+button:hover {
+    background-color: #00bfff;
+    color: black;
+    box-shadow: 0 0 10px #00bfff;
+}
 
-        .horario, .contato {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: rgba(8, 25, 180, 0.2);
-            border-radius: 10px;
-        }
+/* CAIXAS */
+.horario,
+.endereco,
+.premium {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    /* fundo escuro transparente */
+    border-radius: 12px;
+    border: 1px solid rgba(217, 255, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* EFEITO HOVER NAS CAIXAS */
+.horario:hover,
+.endereco:hover,
+.premium:hover {
+    border: 1px solid gold;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+header {
+    position: fixed;
+    /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* centraliza */
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color:gold;
+}

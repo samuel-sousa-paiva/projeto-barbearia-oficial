@@ -8,7 +8,7 @@
 
 /* Fundo */
 body {
-  background: url('img\ fundo\ produto.png') no-repeat center center/cover;
+  background: url('fundo\ todos.png') no-repeat center center/cover;
   color: white;
   text-align: center;
   min-height: 100vh;

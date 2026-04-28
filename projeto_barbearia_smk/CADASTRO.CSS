@@ -1,5 +1,5 @@
 body {
-    background-image: url("imagem\ de\ fundo.png");
+    background-image: url("background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,24 +38,29 @@ input, select {
     border: none;
     outline: none;
 }
-
-button {
-    width: 100%;
-    padding: 15px;
-    background: #00bfff;
-    color: black;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
+button{
+   
+    background: linear-gradient(45deg, #000000, #0a0a0a);
+    color: gold;
+    border: 1px solid black;
     cursor: pointer;
-    transition: 0.3s;
+    margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  font-weight: 200;
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  font: 200
 }
-
 button:hover {
-    background: #009acd;
-    box-shadow: 0 0 10px #00bfff;
-}
-input{
-  color : rgb(0, 0, 0);
- 
-}
+    background-color: #c5b911;
+    color: gold;
+    box-shadow: 0 0 10px gold

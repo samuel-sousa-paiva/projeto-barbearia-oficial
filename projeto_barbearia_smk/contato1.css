@@ -1,0 +1,78 @@
+body {
+     background-image: url("background.png");
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  background: #000;
+  border-bottom: 2px solid #d4af37;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4af37;
+}
+
+/* SEÇÃO CONTATO */
+.contato {
+  padding: 30px;
+}
+
+/* CAIXAS */
+.info-contato,
+.horario,
+.social {
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 500px;
+  background: #111;
+  border: 1px solid #ac8815;
+  border-radius: 10px;
+}
+
+/* TÍTULOS */
+h2 {
+  color: #d4af37;
+}
+
+/* TEXTO */
+p {
+  margin: 8px 0;
+}
+
+
+
+
+button{
+   
+    background: linear-gradient(45deg, #000000, #0a0a0a);
+    color: gold;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 20px;
+  padding: 14px 30px;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  font-weight: 200;
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  font: 200
+}
+button:hover {
+    background-color: #c5b911;
+    color: gold;
+    box-shadow: 0 0 10px gold
+  box-shadow: 0 0 10px gold;
+}

@@ -1,11 +1,11 @@
 body {
-    background-image: url("fundo\ todos.png");
-    font-size: 18px;
+    background-image: url("background.png");
+    font-size: 25px;
 }
 
 h1 {
     text-align: center;
-    color: #a90606;
+    color: gold;
 
     letter-spacing: 2px;
 }
@@ -24,11 +24,13 @@ section {
     letter-spacing: 2px;
 }
 
-button {
-  text-align: center;
-  color: #051a7a;
-  background-color: #a90606;
-  margin-top: 20px;
+button{
+   
+    background: linear-gradient(45deg, #000000, #0a0a0a);
+    color: gold;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 20px;
   padding: 14px 30px;
   border: none;
   font-size: 1.2em;
@@ -39,8 +41,12 @@ button {
   left: 5%;
   bottom: 20px;
   font-weight: 200;
+  position: absolute;
+  left: 5%;
+  bottom: 20px;
+  font: 200
 }
 button:hover {
-  background: rgb(80, 30, 170);
-  transform: scale(1.05); 
-}
+    background-color: #c5b911;
+    color: gold;
+    box-shadow: 0 0 10px gold

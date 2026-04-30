@@ -50,3 +50,14 @@ button:hover {
     background-color: #c5b911;
     color: gold;
     box-shadow: 0 0 10px gold
+}
+.sobrenos,
+.horario,
+.social {
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 500px;
+  background: #111;
+  border: 1px solid #ac8815;
+  border-radius: 10px;
+}

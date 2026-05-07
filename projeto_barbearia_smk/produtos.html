@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMISETAS SMK</title>
+    <link rel="stylesheet" href="produtos.css" />
+  </head>
+
+  <body>
+    <h1>PRODUTOS</h1>
+    <div class="container">
+      <h2>SELECIONE OQUE DESEJA</h2>
+
+      <div class="botoes">
+        <button onclick="adicionarItem('GEL', 25)">GEL - R$ 25</button>
+        <button onclick="adicionarItem('POMADA', 20)">POMADA - R$ 25</button>
+        <button onclick="adicionarItem('PENTE KIT 3', 10)">
+          PENTE KIT 3 - R$ 10
+        </button>
+        <button onclick="adicionarItem('ALISAMENTO', 40)">
+          ALISAMENTO - R$ 40
+        </button>
+        <button onclick="adicionarItem('SHAMPOO E CONDICIONADOR ', 80)">
+          SHAMPOO E CONDICIONADOR - 80
+        </button>
+      </div>
+
+      <pre id="lista-carrinho"></pre>
+      <b id="total">Total: R$ 0,00</b>
+      <button>COMPRAR</button>
+    </div>
+
+    <script>
+      var carrinho = [];
+
+      function adicionarItem(nome, preco) {
+        carrinho.push({ nome: nome, preco: preco });
+        atualizarCarrinho();
+      }
+
+      function atualizarCarrinho() {
+        var total = 0;
+        var lista = "";
+
+        for (var i = 0; i < carrinho.length; i++) {
+          total += carrinho[i].preco;
+          lista +=
+            carrinho[i].nome + " - R$ " + carrinho[i].preco.toFixed(2) + "\n";
+        }
+
+        document.getElementById("lista-carrinho").innerText = lista;
+        document.getElementById("total").innerText =
+          "Total: R$ " + total.toFixed(2);
+      }
+    </script>
+    <button onclick="window.location.href='index.html'">VOLTAR</button>
+    <footer>
+      <p>© 2026 SMK BARBEARIA</p>
+    </footer>
+  </body>
+</html>

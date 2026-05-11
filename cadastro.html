@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="CADASTRO.CSS" />
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+
+    <title>Agendamento - SMK Barbearia</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+
+            <li><a href="sobrenos.html">Sobre nós</a></li>
+
+            <li><a href="tabela.html">Tabela de preços</a></li>
+
+            <li><a href="contato1.html">Contato</a></li>
+
+            <li><a href="cadastro.html">Agendar</a></li>
+
+            <li><a href="localizacao.html">Localização</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- CARD -->
+
+    <div class="card">
+
+        <h1>💈 CADASTRE-SE • AGENDE-SE</h1>
+
+        <p>
+            Agende seu horário e tenha uma experiência premium.
+        </p>
+
+        <form action="/action_page.php">
+
+            <label for="fname">
+                NOME
+            </label>
+
+            <input type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Seu nome..." />
+
+            <label for="lname">
+                WHATSAPP
+            </label>
+
+            <input type="tel"
+                id="lname"
+                name="lastname"
+                placeholder="Digite seu número..." />
+
+            <label for="country">
+                CIDADE
+            </label>
+
+            <select id="cidade"
+                name="cidade">
+
+                <option value="sp">
+                    São Paulo
+                </option>
+
+                <option value="ld">
+                    Londrina
+                </option>
+
+                <option value="sc">
+                    Santa Catarina
+                </option>
+
+            </select>
+
+            <input type="submit"
+                value="AGENDAR"
+                class="agendar" />
+
+        </form>
+
+    </div>
+
+    <button onclick="window.location.href='index.html'">
+
+        ← Voltar para o início
+
+    </button>
+
+</body>
+
+</html>

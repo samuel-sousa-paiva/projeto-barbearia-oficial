@@ -2,17 +2,20 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="CADASTRO.CSS" />
 
     <meta charset="UTF-8" />
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Agendamento - SMK Barbearia</title>
+    <link rel="stylesheet" href="CADASTRO.CSS" />
+
+    <title>Agendamento - SMD Barbearia</title>
+
 </head>
 
 <body>
+
+    <!-- MENU -->
 
     <nav>
 
@@ -34,7 +37,7 @@
 
     </nav>
 
-    <!-- CARD -->
+    <!-- CARD DE AGENDAMENTO -->
 
     <div class="card">
 
@@ -44,32 +47,43 @@
             Agende seu horário e tenha uma experiência premium.
         </p>
 
-        <form action="/action_page.php">
+        <form>
+
+            <!-- NOME -->
 
             <label for="fname">
                 NOME
             </label>
 
-            <input type="text"
+            <input 
+                type="text"
                 id="fname"
                 name="firstname"
-                placeholder="Seu nome..." />
+                placeholder="Seu nome..."
+                required
+            />
+
+            <!-- WHATSAPP -->
 
             <label for="lname">
                 WHATSAPP
             </label>
 
-            <input type="tel"
+            <input 
+                type="tel"
                 id="lname"
-                name="lastname"
-                placeholder="Digite seu número..." />
+                name="telefone"
+                placeholder="Digite seu número..."
+                required
+            />
 
-            <label for="country">
+            <!-- CIDADE -->
+
+            <label for="cidade">
                 CIDADE
             </label>
 
-            <select id="cidade"
-                name="cidade">
+            <select id="cidade" name="cidade">
 
                 <option value="sp">
                     São Paulo
@@ -85,19 +99,27 @@
 
             </select>
 
-            <input type="submit"
-                value="AGENDAR"
-                class="agendar" />
+            <!-- BOTÃO -->
+
+            <button type="button" class="agendar" onclick="window.location.href='Cadastro_ok.html'">
+                AGENDAR
+            </button>
 
         </form>
 
     </div>
 
-    <button onclick="window.location.href='index.html'">
+    <!-- BOTÃO VOLTAR -->
 
-        ← Voltar para o início
+    <div class="voltar">
 
-    </button>
+        <button onclick="window.location.href='index.html'">
+
+            ← Voltar para o início
+
+        </button>
+
+    </div>
 
 </body>
 

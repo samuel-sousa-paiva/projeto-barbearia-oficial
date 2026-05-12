@@ -1,222 +1,237 @@
-body{
+body {
 
-    background-image:url("background.png");
+    background-image: url("background.png");
 
-    background-size:cover;
+    background-size: cover;
 
-    background-position:center;
+    background-position: center;
 
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 
-    font-family:'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 
-    margin:0;
+    margin: 0;
 
-    padding:0;
+    padding: 0;
 
-    color:white;
+    color: white;
 
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 /* NAV */
 
-nav{
+nav {
 
-    background:rgba(0,0,0,.75);
+    background: rgba(0, 0, 0, .75);
 
-    padding:20px;
+    padding: 20px;
 }
 
-nav ul{
+nav ul {
 
-    list-style:none;
+    list-style: none;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    gap:35px;
+    gap: 35px;
 
-    margin:0;
+    margin: 0;
 
-    padding:0;
+    padding: 0;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
-nav ul li a{
+nav ul li a {
 
-    text-decoration:none;
+    text-decoration: none;
 
-    color:white;
+    color: white;
 
-    font-size:18px;
+    font-size: 18px;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 
-    color:gold;
+    color: gold;
 }
 
 /* TITULO */
 
-h1{
+h1 {
 
-    text-align:center;
+    text-align: center;
 
-    color:gold;
+    color: gold;
 
-    margin-top:40px;
+    margin-top: 40px;
 
-    font-size:48px;
+    font-size: 48px;
 }
 
 /* CONTAINER */
 
-.contato{
+.contato {
 
-    width:90%;
+    width: 90%;
 
-    max-width:1100px;
+    max-width: 1100px;
 
-    margin:50px auto;
+    margin: 50px auto;
 
-    display:grid;
+    display: grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(300px,1fr));
+        repeat(auto-fit, minmax(300px, 1fr));
 
-    gap:30px;
+    gap: 30px;
 }
 
 /* CARDS */
 
-.card{
+.card {
 
-    background:rgba(0,0,0,.72);
+    background: rgba(0, 0, 0, .72);
 
-    border:1px solid rgba(255,215,0,.18);
+    border: 1px solid rgba(255, 215, 0, .18);
 
-    border-radius:25px;
+    border-radius: 25px;
 
-    padding:35px;
+    padding: 35px;
 
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
 
-    transition:.3s;
-
-    box-shadow:
-    0 0 20px rgba(255,215,0,.06);
-}
-
-.card:hover{
-
-    transform:translateY(-6px);
-
-    border-color:gold;
+    transition: .3s;
 
     box-shadow:
-    0 0 25px rgba(255,215,0,.18);
+        0 0 20px rgba(255, 215, 0, .06);
 }
 
-.card h2{
+.card:hover {
 
-    color:gold;
+    transform: translateY(-6px);
 
-    margin-bottom:25px;
+    border-color: gold;
 
-    font-size:28px;
+    box-shadow:
+        0 0 25px rgba(255, 215, 0, .18);
 }
 
-.card p{
+.card h2 {
 
-    font-size:18px;
+    color: gold;
 
-    line-height:1.8;
+    margin-bottom: 25px;
 
-    color:#ddd;
+    font-size: 28px;
+}
+
+.card p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #ddd;
 }
 
 /* BOTÃO */
 
-button{
+button {
 
-    position:fixed;
+    position: fixed;
 
-    left:20px;
-    bottom:20px;
+    left: 20px;
+    bottom: 20px;
 
-    background:rgba(0,0,0,.82);
+    background: rgba(0, 0, 0, .82);
 
-    color:gold;
+    color: gold;
 
-    border:1px solid rgba(255,215,0,.2);
+    border: 1px solid rgba(255, 215, 0, .2);
 
-    padding:14px 22px;
+    padding: 14px 22px;
 
-    border-radius:14px;
+    border-radius: 14px;
 
-    font-size:16px;
+    font-size: 16px;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    transition:.3s;
+    transition: .3s;
 }
 
-button:hover{
+button:hover {
 
-    background:gold;
+    background: gold;
 
-    color:black;
+    color: black;
 }
 
 /* RESPONSIVO */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    h1{
+    h1 {
 
-        font-size:34px;
+        font-size: 34px;
 
-        padding:0 10px;
+        padding: 0 10px;
     }
 
-    .card{
+    .card {
 
-        padding:25px;
+        padding: 25px;
     }
 
-    .card h2{
+    .card h2 {
 
-        font-size:24px;
+        font-size: 24px;
     }
 
-    .card p{
+    .card p {
 
-        font-size:16px;
+        font-size: 16px;
     }
 
-    nav ul{
+    nav ul {
 
-        gap:18px;
+        gap: 18px;
     }
 
-    nav ul li a{
+    nav ul li a {
 
-        font-size:15px;
+        font-size: 15px;
     }
 
-    button{
+    button {
 
-        left:10px;
-        bottom:10px;
+        left: 10px;
+        bottom: 10px;
 
-        padding:12px 18px;
+        padding: 12px 18px;
 
-        font-size:14px;
+        font-size: 14px;
     }
 
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: gold;
+
+    font-size: 18px;
+
+    border-top: 1px solid rgba(255, 215, 0, .1);
+
+    background: rgba(0, 0, 0, .5);
 }

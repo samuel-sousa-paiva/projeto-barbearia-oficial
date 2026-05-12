@@ -1,77 +1,135 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>SMD Barbearia</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="logo">
-        <img src="logo1.png" alt="Logo SMD Barbearia" width="100" height="70" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
 
-      <!-- Botão Mobile -->
-      <button class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0" />
 
-      <nav>
-        <ul class="nav-list" id="nav-list">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="sobrenos.html">Sobre nós</a></li>
-          <li><a href="tabela.html">Tabela de preços</a></li>
-          <li><a href="contato1.html">Contato</a></li>
-          <li><a href="cadastro.html">Agendar</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="localizacao.html">Localização</a></li>
-        </ul>
-      </nav>
-    </header>
+  <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
 
-    <!-- CONTEÚDO -->
-    <main>
-      <h3>
-        Nosso compromisso é oferecer um atendimento personalizado,
-        respeitando o estilo e a personalidade de cada cliente.
-      </h3>
+  <title>SMD Barbearia</title>
+</head>
 
-      <div class="horario">
-        <h2>Horário de Funcionamento</h2>
-        <p>Segunda a Sexta - 10h às 20h</p>
-      </div>
+<body>
 
-      <div class="endereco">
-        <h2>Loja Principal</h2>
-        <p>Avenida Dourado Premium, 1087 - Bairro Central Neon</p>
-        <p>Cidade: Nova São Lucas - SP</p>
-        <p>CEP: 56802-255</p>
-      </div>
+  <header>
 
-      <div class="premium">
-        <h2>Experiência Premium</h2>
-        <p>
-          Oferecemos cortes e cuidados de alto nível com qualidade profissional.
-        </p>
-      </div>
-    </main>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='logo.png') }}"
+        alt="Logo SMD Barbearia"
+        width="100"
+        height="70" />
+    </div>
 
-    <footer>
-      <p>© 2026 SMD BARBEARIA</p>
-    </footer>
+    <!-- BOTÃO MOBILE -->
+    <button class="menu-toggle" id="mobile-menu">
 
-    <script>
-      const mobileMenu = document.getElementById("mobile-menu");
-      const navList = document.getElementById("nav-list");
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
 
-      mobileMenu.addEventListener("click", () => {
-        navList.classList.toggle("active");
-        mobileMenu.classList.toggle("is-active");
-      });
-    </script>
-  </body>
+    </button>
+
+    <!-- MENU -->
+    <nav>
+
+      <ul class="nav-list" id="nav-list">
+
+        <li><a href="/">Início</a></li>
+
+        <li><a href="/sobrenos">Sobre nós</a></li>
+
+        <li><a href="/tabela">Tabela de preços</a></li>
+
+        <li><a href="/contato">Contato</a></li>
+
+        <li><a href="/cadastro">Agendar</a></li>
+
+        <li><a href="/produtos">Produtos</a></li>
+
+        <li><a href="/localizacao">Localização</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main>
+
+    <h3>
+      Nosso compromisso é oferecer um atendimento personalizado,
+      respeitando o estilo e a personalidade de cada cliente.
+    </h3>
+
+    <!-- CARD HORÁRIO -->
+    <div class="horario">
+
+      <h2>Horário de Funcionamento</h2>
+
+      <p>Segunda a Sexta - 10h às 20h</p>
+
+      <p>Sábado - 09h às 18h</p>
+
+    </div>
+
+    <!-- CARD ENDEREÇO -->
+    <div class="endereco">
+
+      <h2>Loja Principal</h2>
+
+      <p>Avenida Dourado Premium, 1087 - Bairro Central Neon</p>
+
+      <p>Cidade: Nova São Lucas - SP</p>
+
+      <p>CEP: 56802-255</p>
+
+    </div>
+
+    <!-- CARD PREMIUM -->
+    <div class="premium">
+
+      <h2>Experiência Premium</h2>
+
+      <p>
+        Oferecemos cortes modernos, barba premium
+        e cuidados profissionais para elevar sua autoestima.
+      </p>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    © 2026 SMD BARBEARIA — Todos os direitos reservados.
+
+  </footer>
+
+  <!-- SCRIPT MENU MOBILE -->
+  <script>
+
+    const mobileMenu =
+      document.getElementById("mobile-menu");
+
+    const navList =
+      document.getElementById("nav-list");
+
+    mobileMenu.addEventListener("click", () => {
+
+      navList.classList.toggle("active");
+
+      mobileMenu.classList.toggle("is-active");
+
+    });
+
+  </script>
+
+</body>
+
 </html>

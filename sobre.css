@@ -187,15 +187,20 @@ button:hover{
 
 /* FOOTER */
 
+
 footer{
 
     text-align:center;
 
-    padding:25px;
+    padding:35px;
 
     color:gold;
 
-    margin-top:40px;
+    font-size:18px;
+
+    border-top:1px solid rgba(255,215,0,.1);
+
+    background:rgba(0,0,0,.5);
 }
 
 /* RESPONSIVO */

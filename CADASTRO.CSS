@@ -8,6 +8,13 @@ body{
 
     background-repeat:no-repeat;
 
+    background-attachment: fixed;
+
+  background-position: center;
+
+
+  background-size: cover;
+
     font-family:'Poppins',sans-serif;
 
     margin:0;
@@ -109,12 +116,28 @@ p{
 
 /* FORM */
 
+
+section{
+    padding: auto;
+    align-items: center;
+    position: relative;
+
+}
+
+article{
+    padding: auto;
+    align-items: center;
+    position: relative;
+}
+
 form{
 
     display:flex;
-
+align-items: center;
     flex-direction:column;
 }
+
+
 
 label{
 
@@ -203,7 +226,7 @@ button{
 
     border-radius:14px;
 
-    font-size:16px;
+    font-size:10px;
 
     cursor:pointer;
 
@@ -251,4 +274,18 @@ button:hover{
         font-size:14px;
     }
 
+}
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    color:gold;
+
+    font-size:18px;
+
+    border-top:1px solid rgba(255,215,0,.1);
+
+    background:rgba(0,0,0,.5);
 }

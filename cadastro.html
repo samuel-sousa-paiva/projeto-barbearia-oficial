@@ -1,126 +1,30 @@
 <!doctype html>
-<html lang="pt-br">
-
-<head>
-
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="CADASTRO.CSS" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+AGENDAMENTO
+    </h1>
+    <main>
+      <section class="card">
+        <article>
+          <form action="http://127.0.0.1:5000/agendar" method="POST">
+            <input type="text" name="nome" placeholder="Nome do cliente" />
 
-    <title>Agendamento - SMD Barbearia</title>
+            <input type="text" name="servico" placeholder="Serviço desejado" />
 
-</head>
+            <input type="time" name="horario" />
+            <button type="submit"oncli class="agendar">FINALIZAR</button>
 
-<body>
-
-    <!-- MENU -->
-
-    <nav>
-
-        <ul>
-
-            <li><a href="index.html">Início</a></li>
-
-            <li><a href="sobrenos.html">Sobre nós</a></li>
-
-            <li><a href="tabela.html">Tabela de preços</a></li>
-
-            <li><a href="contato1.html">Contato</a></li>
-
-            <li><a href="cadastro.html">Agendar</a></li>
-
-            <li><a href="localizacao.html">Localização</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- CARD DE AGENDAMENTO -->
-
-    <div class="card">
-
-        <h1>💈 CADASTRE-SE • AGENDE-SE</h1>
-
-        <p>
-            Agende seu horário e tenha uma experiência premium.
-        </p>
-
-        <form>
-
-            <!-- NOME -->
-
-            <label for="fname">
-                NOME
-            </label>
-
-            <input 
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Seu nome..."
-                required
-            />
-
-            <!-- WHATSAPP -->
-
-            <label for="lname">
-                WHATSAPP
-            </label>
-
-            <input 
-                type="tel"
-                id="lname"
-                name="telefone"
-                placeholder="Digite seu número..."
-                required
-            />
-
-            <!-- CIDADE -->
-
-            <label for="cidade">
-                CIDADE
-            </label>
-
-            <select id="cidade" name="cidade">
-
-                <option value="sp">
-                    São Paulo
-                </option>
-
-                <option value="ld">
-                    Londrina
-                </option>
-
-                <option value="sc">
-                    Santa Catarina
-                </option>
-
-            </select>
-
-            <!-- BOTÃO -->
-
-            <button type="button" class="agendar" onclick="window.location.href='Cadastro_ok.html'">
-                AGENDAR
-            </button>
-
-        </form>
-
-    </div>
-
-    <!-- BOTÃO VOLTAR -->
-
-    <div class="voltar">
-
-        <button onclick="window.location.href='index.html'">
-
-            ← Voltar para o início
-
-        </button>
-
-    </div>
-
-</body>
-
+          </form>
+        </article>
+      </section>
+      
+    </main>
+  </body>
 </html>

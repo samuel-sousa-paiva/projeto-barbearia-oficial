@@ -4,28 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CADASTRO.CSS" />
-    <title>Document</title>
+    <title>SMD Barbearia</title>
   </head>
   <body>
-    <nav>
+    <header>
+<header>
 
-        <ul>
+  <a href="index.html">
+    <div class="logo">
+      <img src="logo.png" alt="Logo SMD Barbearia" width="100" height="70">
+    </div>
+  </a>
 
-            <li><a href="index.html">Início</a></li>
+  <!-- BOTÃO MOBILE -->
+  <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
 
-            <li><a href="sobrenos.html">Sobre nós</a></li>
+  <!-- MENU -->
+  <nav>
+    <ul id="nav-list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobrenos.html">Sobre nós</a></li>
+      <li><a href="tabela.html">Tabela de preços</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="cadastro.html">Agendar</a></li>
+      <li><a href="localizacao.html">Localização</a></li>
+    </ul>
+  </nav>
 
-            <li><a href="tabela.html">Tabela de preços</a></li>
+</header>
+  </header>
 
-            <li><a href="contato.html">Contato</a></li>
-
-            <li><a href="cadastro.html">Agendar</a></li>
-
-            <li><a href="localizacao.html">Localização</a></li>
-
-        </ul>
-
-    </nav>
     <h1>AGENDAMENTO</h1>
     <main>
       <section class="card">
@@ -46,5 +58,22 @@
         </article>
       </section>
     </main>
+     <footer>
+
+        <p>© 2026 SMK BARBEARIA</p>
+
+    </footer>|
+     <!-- SCRIPT MENU MOBILE -->
+  <script>
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navList    = document.getElementById("nav-list");
+
+    mobileMenu.addEventListener("click", () => {
+      navList.classList.toggle("active");
+      mobileMenu.classList.toggle("is-active");
+    });
+  </script>
+  
+
   </body>
 </html>

@@ -26,46 +26,221 @@ body{
     overflow-x:hidden;
 }
 
-/* NAV */
 
-nav{
 
-    background:rgba(0,0,0,.75);
-
-    padding:20px;
+/* LOGO */
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
 }
 
-nav ul{
-
-    list-style:none;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:35px;
-
-    margin:0;
-
-    padding:0;
-
-    flex-wrap:wrap;
+/* =============================================
+   MENU — DESKTOP
+   ============================================= */
+nav {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-top: none;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
 }
 
-nav ul li a{
-
-    text-decoration:none;
-
-    color:white;
-
-    font-size:18px;
-
-    transition:.3s;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-nav ul li a:hover{
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
 
-    color:gold;
+nav ul li a:hover {
+    color: gold;
+}
+
+/* =============================================
+   BOTÃO HAMBÚRGUER — oculto no desktop
+   ============================================= */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    box-shadow: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+/* Animação X quando menu aberto */
+.menu-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+.menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* =============================================
+   CONTEÚDO PRINCIPAL
+   ============================================= */
+main {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+/* =============================================
+   TÍTULO
+   ============================================= */
+h1 {
+    text-align: center;
+    color: #000000;
+    letter-spacing: 2px;
+    background-color: gold;
+    padding: 10px;
+    font-size: 52px;
+}
+
+/* =============================================
+   SUBTÍTULOS
+   ============================================= */
+h3 {
+    margin: 20px 0 30px;
+    color: #ffffff;
+    background-color: rgba(90, 79, 18, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* =============================================
+   BOTÕES GERAIS (exceto hambúrguer)
+   ============================================= */
+button:not(.menu-toggle) {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #000000, #0a0a0a);
+    color: gold;
+    border: 1px solid gold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:not(.menu-toggle):hover {
+    background: gold;
+    color: black;
+    box-shadow: 0 0 10px gold;
+}
+
+/* =============================================
+   RESPONSIVO — MOBILE (≤ 768px)
+   ============================================= */
+@media (max-width: 768px) {
+
+    /* Mostra o botão hambúrguer */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Menu: oculto por padrão, aparece em coluna quando .active */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 110px; /* altura do header com logo + nav */
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+    }
+
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Ajustes gerais mobile */
+    main {
+        margin-top: 80px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+        padding: 12px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .horario,
+    .endereco,
+    .premium {
+        width: 95%;
+        padding: 18px;
+    }
+
+    button:not(.menu-toggle) {
+        width: 100%;
+        font-size: 15px;
+        padding: 14px;
+    }
 }
 
 /* CARD */
@@ -288,4 +463,36 @@ footer{
     border-top:1px solid rgba(255,215,0,.1);
 
     background:rgba(0,0,0,.5);
+}
+/* =============================================
+   MENU MOBILE FUNCIONAL
+   ============================================= */
+
+@media(max-width:768px){
+
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        display: none; /* ESCONDIDO POR PADRÃO */
+    }
+
+    nav ul.active {
+        display: flex; /* MOSTRA AO CLICAR */
+    }
+
+    .menu-toggle {
+        display: flex; /* MOSTRA HAMBURGUER */
+    }
 }

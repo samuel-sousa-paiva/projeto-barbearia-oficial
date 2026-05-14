@@ -279,7 +279,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #ddcece;
     padding: 1rem 2rem;
     color: white;
 }
@@ -353,4 +353,21 @@ footer {
     border-top: 1px solid rgba(255, 215, 0, .1);
 
     background: rgba(0, 0, 0, .5);
+}
+div{
+    text-align: center;
+}
+nav{
+      text-align: center;
+
+    padding: 35px;
+
+    color: gold;
+
+    font-size: 18px;
+
+    border-top: 1px solid rgba(255, 215, 0, .1);
+
+    background: rgba(0, 0, 0, .5);
+}
 }

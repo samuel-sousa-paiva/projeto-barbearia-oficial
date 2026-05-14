@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet"  href="style.css">
 
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0" />
@@ -15,14 +16,13 @@
 
 <body>
 
-  <header>
-
+ 
     <div class="logo">
-      <img src="{{ url_for('static', filename='logo.png') }}"
+    <img src="logo.png"
         alt="Logo SMD Barbearia"
         width="100"
-        height="70" />
-    </div>
+        height="70">
+</div>
 
     <!-- BOTÃO MOBILE -->
     <button class="menu-toggle" id="mobile-menu">
@@ -36,24 +36,21 @@
     <!-- MENU -->
     <nav>
 
-      <ul class="nav-list" id="nav-list">
+      
+      <ul>
+        <li><a href="index.html">Início</a></li>
 
-        <li><a href="/">Início</a></li>
+        <li><a href="sobrenos.html">Sobre nós</a></li>
 
-        <li><a href="/sobrenos">Sobre nós</a></li>
+        <li><a href="tabela.html">Tabela de preços</a></li>
 
-        <li><a href="/tabela">Tabela de preços</a></li>
+        <li><a href="contato.html">Contato</a></li>
 
-        <li><a href="/contato">Contato</a></li>
+        <li><a href="cadastro.html">Agendar</a></li>
 
-        <li><a href="/cadastro">Agendar</a></li>
-
-        <li><a href="/produtos">Produtos</a></li>
-
-        <li><a href="/localizacao">Localização</a></li>
-
+        <li><a href="localizacao.html">Localização</a></li>
       </ul>
-
+    
     </nav>
 
   </header>
